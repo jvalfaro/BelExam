@@ -12,10 +12,7 @@ namespace Examen.Controllers
     {
         ExamenServiceClient rpc = new ExamenServiceClient();
         public ActionResult Index(string nombre)
-
-
         {
-
             if (nombre != null)
             {
                 List<Examen.BE.Producto> listado = new List<Examen.BE.Producto>();
