@@ -12,22 +12,22 @@ namespace Examen.Controllers
     public class HomeController : Controller
     {
         ExamenServiceClient rpc = new ExamenServiceClient();
-        //private CustomerBL customerBL = new CustomerBL();
-        public ActionResult Buscar(string nombre)
-        //public async Task<ActionResult> Index()
-        {
-            //return View(await customerBL.Listar());
-            //return View(customerBL.Listar());
-            List<Examen.BE.Producto> listado = new List<Examen.BE.Producto>();
-            listado = rpc.ListarProductos(nombre).ToList();
-            return View(listado);
-        }
+        public ActionResult Index(string nombre)
 
-        public ActionResult Index()
-        //public async Task<ActionResult> Index()
+
         {
-            List<Producto> Producto = new List<Producto>();
-            return View(Producto);
+
+            if (nombre!= null)
+            {
+                List<Examen.BE.Producto> listado = new List<Examen.BE.Producto>();
+                listado = rpc.ListarProductos(nombre).ToList();
+                return View(listado);
+            }
+            else
+             {
+                List<Producto> Producto = new List<Producto>();
+                return View(Producto);
+            }
         }
     }
 }

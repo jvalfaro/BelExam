@@ -27,8 +27,8 @@ namespace Examen.DAL
             {
                 con.Open();
                 //await con.OpenAsync();
-                var query = new SqlCommand("ListarProductos", con);
-                query.Parameters.AddWithValue("@nombre", nombre);
+                var query = new SqlCommand("usp_s_ListarProductos", con);
+                query.Parameters.AddWithValue("@vDescripcion", nombre);
                 query.CommandType = System.Data.CommandType.StoredProcedure;
 
                 using (var dr = query.ExecuteReader())

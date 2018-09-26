@@ -6,12 +6,12 @@
 }
 
 <div class="jumbotron">
-    @using (Html.BeginForm())
+    @using (Html.BeginForm("Index","Home"))
     {
         <h1>Aprovecha nuestras ofertas</h1>
-        <label>Buscar:</label> <input type="text" name="nombre" class="btn btn-primary"/>
+        <label>Buscar:</label> <input type="text" name="nombre" class="form-control"/>
         <br />
-        <input type="submit" value="Buscar" class="btn btn-default" />
+        <input type="submit" value="Buscar" name="Buscar" class="btn btn-default" />
     }
 
 </div>
