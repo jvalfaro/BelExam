@@ -14,9 +14,9 @@ namespace Examen.BL
         private ExamenDAL ExamenDAL = new ExamenDAL();
 
         public List<Producto> ListarProductos(string nombre)
-        //public async Task<List<Customer>> Listar()
+
         {
-            //return  await customerDAL.Listar();
+            
             return ExamenDAL.ListarProductos(nombre);
 
         }

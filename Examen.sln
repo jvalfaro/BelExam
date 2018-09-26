@@ -20,6 +20,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examen.HOST", "Examen.HOST\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examen.Implementation", "Examen.Implementation\Examen.Implementation.csproj", "{83851D2D-2EB2-442F-B8D4-1DD7BC567E57}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamTest", "ExamTest\ExamTest.csproj", "{077942BD-F7B8-4E3A-97A4-6E386CD2A552}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,6 +56,10 @@ Global
 		{83851D2D-2EB2-442F-B8D4-1DD7BC567E57}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83851D2D-2EB2-442F-B8D4-1DD7BC567E57}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83851D2D-2EB2-442F-B8D4-1DD7BC567E57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{077942BD-F7B8-4E3A-97A4-6E386CD2A552}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{077942BD-F7B8-4E3A-97A4-6E386CD2A552}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{077942BD-F7B8-4E3A-97A4-6E386CD2A552}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{077942BD-F7B8-4E3A-97A4-6E386CD2A552}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

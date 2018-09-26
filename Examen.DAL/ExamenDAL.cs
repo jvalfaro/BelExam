@@ -20,19 +20,16 @@ namespace Examen.DAL
         }
 
         public List<Producto> ListarProductos(string nombre )
-        //public async Task<List<Customer>> Listar()
         {
             var Producto = new List<Producto>();
             using (var con = new SqlConnection(ConnectionString))
             {
                 con.Open();
-                //await con.OpenAsync();
                 var query = new SqlCommand("usp_s_ListarProductos", con);
                 query.Parameters.AddWithValue("@vDescripcion", nombre);
                 query.CommandType = System.Data.CommandType.StoredProcedure;
 
                 using (var dr = query.ExecuteReader())
-                //using (var dr = await query.ExecuteReaderAsync())
                 {
                     while (dr.Read())
                     {
@@ -41,7 +38,7 @@ namespace Examen.DAL
                         Marca.Add(new Marca
 
                         {
-                            Descripcion = dr["Descripcion"].ToString(),
+                            Descripcion = dr["DescMarca"].ToString(),
                         });
 
                         Producto.Add(new Producto
