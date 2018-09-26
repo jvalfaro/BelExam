@@ -21,6 +21,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examen.Implementation", "Examen.Implementation\Examen.Implementation.csproj", "{83851D2D-2EB2-442F-B8D4-1DD7BC567E57}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamTest", "ExamTest\ExamTest.csproj", "{077942BD-F7B8-4E3A-97A4-6E386CD2A552}"
+	ProjectSection(ProjectDependencies) = postProject
+		{88310256-32B2-4E7C-85CF-CDBEF2DF362C} = {88310256-32B2-4E7C-85CF-CDBEF2DF362C}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B78DADE0-F607-40AD-BEDF-7F05DDDDBBDF}"
 	ProjectSection(SolutionItems) = preProject
