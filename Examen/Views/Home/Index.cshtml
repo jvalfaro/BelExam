@@ -30,26 +30,33 @@
             </tr>
             <tr>
                 <td>
-                    <div class="form-group">
+                    <div class="form-group text-center">
+                        @Html.DisplayNameFor(Model => Model.Marca.ToList()[0].Descripcion):
                         @Html.DisplayFor(modelItem => item.Marca.ToList()[0].Descripcion)
                     </div>
-                    <div class="form-group">
+                    <div class="form-group text-center">
+                        @Html.DisplayNameFor(Model => Model.Cuv):
                         @Html.DisplayFor(modelItem => item.Cuv)
                     </div>
-                    <div class="form-group">
+                    <div class="form-group text-center">
+                        @Html.DisplayNameFor(Model => Model.Precio):
                         S/.@Html.DisplayFor(modelItem => item.Precio)
                     </div>
                     <div class="form-group">
-                        <select class="form-control" id="sel1">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                        </select>
-                        @Html.ActionLink("Comprar", "comprar", new { nombre = "1" })
-                    </div>
+                        <div class="col-sm-5">
+                            <select class="form-control" id="sel1">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-5">
+                            @Html.ActionLink("Comprar", "comprar", new { nombre = "1" })
+                        </div>
+                      </div>
 
-                </td>
+                       </td>
             </tr>
         </table>
     </div>
